@@ -69,7 +69,6 @@ li {
 .navbar .dropdown-menu {
   background: #00000000;
   border: none;
-  /* background-color: #7bb1dd; */
 }
 
 .navbar-brand img {
@@ -124,12 +123,28 @@ section,
 
 /* media queries */
 
+@media (max-width: 1150px) {
+  .navbar .dropdown-menu {
+    background-color: #7bb1dd;
+  }
+}
+@media (min-width: 768px) {
+  .hiddenWhenLarge {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .border-bar {
     border-top: 1px solid #eb0e1f;
     border-bottom: 1px solid #eb0e1f;
     border-left: none;
     border-right: none;
+  }
+  .navbar .dropdown-menu {
+    background: #00000000;
+  }
+  .hiddenWhenSmall {
+    display: none;
   }
 }
 
