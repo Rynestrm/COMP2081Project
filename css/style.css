@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+/* ----- dafault styles ----- */
+/* font from https://www.fontsquirrel.com/fonts/luckiest-guy */
+@font-face {
+  font-family: "LuckyiestGuy";
+  src: url("../fonts/LuckiestGuy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* scroll bar color change. Only works in firefox */
+html {
+  scrollbar-color: #eb0e1f #030303;
+}
+
+body {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 65%,
+    rgba(123, 177, 221, 1) 100%
+  );
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: LuckyiestGuy, sans-serif;
+  text-transform: uppercase;
+}
+p,
+a,
+li {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.container img {
+  width: 100%;
+}
+
+/* ----- navbar styles ----- */
+
+.navbar {
+  background-color: #7bb1dd;
+}
+
+.navbar li,
+.navbar a,
+.navbar button {
+  margin: 0 5px;
+  font-size: 1.1em;
+  color: #030303;
+}
+
+.navbar li:hover {
+  text-decoration: underline;
+  text-decoration-color: #eb0e1f;
+  text-decoration-thickness: 2px;
+}
+
+.navbar .dropdown-menu {
+  background-color: #7bb1dd;
+}
+
+.navbar-brand img {
+  height: 80px;
+}
+
+.navbar i {
+  font-size: 1.5em;
+  color: #030303;
+}
+
+/* ----- cavousel styles ----- */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #030303;
+  border-radius: 50px;
+}
+
+/* collapse styles */
+section,
+.specs {
+  background: rgba(0, 0, 0, 0);
+}
+
+#about {
+  cursor: pointer;
+}
+
+/* ----- footer styles ----- */
+
+.footer {
+  background-color: #7bb1dd;
+  color: #030303;
+}
+
+.footer i {
+  font-size: 2.5em;
+  color: #030303;
+}
+
+.border-bar {
+  border-left: 1px solid #030303;
+  border-right: 1px solid #030303;
+}
+
+.footer img {
+  width: 80px;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  .border-bar {
+    border-top: 1px solid #eb0e1f;
+    border-bottom: 1px solid #eb0e1f;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer img {
+    margin: 20px 0 20px 0;
+  }
+}
